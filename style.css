@@ -1,0 +1,241 @@
+/* Estilos Gerais */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Fundo mais suave para dark mode */
+    color: #e0e0e0; /* Texto cinza claro */
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+header {
+    background-color: #16213e;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 3px solid #0f3460; /* Destaque azul mais profundo */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+main {
+    padding: 30px;
+    max-width: 960px;
+    margin: 30px auto;
+    background-color: #16213e;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: #0f3460;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #e94560; /* Títulos em um vermelho mais amigável */
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 12px;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: #53d8e9; /* Títulos de subseção em ciano mais vibrante */
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #53d8e9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e94560;
+    text-decoration: underline;
+}
+
+/* Seção de Conceitos */
+.conceito-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #0a1931;
+    border-left: 6px solid #e94560;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção do Quiz */
+.quiz-item {
+    background-color: #0a1931;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #0f3460;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-item .comentario {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    font-size: 1.15rem;
+}
+
+.botoes-quiz button {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-right: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botoes-quiz button:hover {
+    background-color: #d43a50;
+    transform: translateY(-2px);
+}
+
+.botoes-quiz button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.quiz-item .resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.resultado.correto {
+    background-color: #28a745; /* Verde para correto */
+    color: white;
+}
+
+.resultado.incorreto {
+    background-color: #dc3545; /* Vermelho para incorreto */
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background-color: #16213e;
+    color: #bbbbbb;
+    border-top: 3px solid #0f3460;
+    font-size: 0.95rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p, ul {
+        font-size: 1rem;
+    }
+
+    .botoes-quiz button {
+        display: block;
+        width: calc(100% - 10px);
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p, ul {
+        font-size: 0.95rem;
+    }
+
+    .botoes-quiz button {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+}
